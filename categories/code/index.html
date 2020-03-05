@@ -335,6 +335,8 @@
         
           
         
+          
+        
       
     
     
@@ -352,8 +354,8 @@
       
         
   <h2 class="title">
-    <a href="/2020/03/05/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/Actor%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
-      编程模型/Actor编程模型
+    <a href="/2020/03/06/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/Actor%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
+      Actor编程模型
     </a>
   </h2>
 
@@ -378,7 +380,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-edit" aria-hidden="true"></i>
-    <p>发布于：2020年3月5日</p>
+    <p>发布于：2020年3月6日</p>
   </a>
 </div>
 
@@ -412,7 +414,7 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="Actor编程模型"><a href="#Actor编程模型" class="headerlink" title="Actor编程模型"></a>Actor编程模型</h1><p>Actors模型(Actor model)首先是由Carl Hewitt在1973定义， 由Erlang OTP (Open Telecom Platform) 推广，其消息传递更加符合面向对象的原始意图。 Actors属于并发组件模型 ，通过组件方式定义并发编程范式的高级阶段，避免使用者直接接触多线程并发或线程池等基础概念。  </p>
+      <p>Actors模型(Actor model)首先是由Carl Hewitt在1973定义， 由Erlang OTP (Open Telecom Platform) 推广，其消息传递更加符合面向对象的原始意图。 Actors属于并发组件模型 ，通过组件方式定义并发编程范式的高级阶段，避免使用者直接接触多线程并发或线程池等基础概念。  </p>
 <p>传统多数流行的语言并发是基于多线程之间的共享内存，使用同步方法防止写争夺，Actors使用消息模型，每个Actors在同一时间处理最多一个消息，可以发送消息给其他Actors，保证了单独写原则 。从而巧妙避免了多线程写争夺。  </p>
 <p>Actors模型的特点是：  </p>
 <ul>
@@ -423,7 +425,7 @@
 <li>不可变的消息 消息模型类似mailbox / queue</li>
 </ul>
 <p>AKKA框架是一个实现Actors模型的Scala或Java平台，灵感来自ERlang，能更轻松地开发可扩展，实现多线程安全应用。</p>
-<p>Actors是一个轻量级的对象，通过发送消息实现交互。每个Actors在同一时间处理最多一个消息，可以发送消息给其他Actors。在同一时间可以于一个Java虚拟机存在数以百万计的参与者，构架是一个分层的父层（管理） - 子层，其中父层监控子层的行为。还可以很容易地扩展Actor运行在集群中各个节点之间 - 无需修改一行代码。每个演员都可以有内部状态（字段/变量） ，但通信只能通过消息传递，不会有共享数据结构（计数器，队列） 。Akka框架支持两种语言Java和Scala，</p>
+<p>Actors是一个轻量级的对象，通过发送消息实现交互。每个Actors在同一时间处理最多一个消息，可以发送消息给其他Actors。在同一时间可以于一个Java虚拟机存在数以百万计的参与者，构架是一个分层的父层（管理） - 子层，其中父层监控子层的行为。还可以很容易地扩展Actor运行在集群中各个节点之间 - 无需修改一行代码。每个演员都可以有内部状态（字段/变量） ，但通信只能通过消息传递，不会有共享数据结构（计数器，队列） 。Akka框架支持两种语言Java和Scala</p>
 
       
     </div>
@@ -431,6 +433,100 @@
       <div class="full-width auto-padding tags">
         
           <a href="/tags/Actor/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Actor</a>
+        
+          <a href="/tags/Erlang/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Erlang</a>
+        
+      </div>
+     -->
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/03/06/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/CSP%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
+      CSP编程模型
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+<div class='new-meta-item author'>
+  <a href="" rel="nofollow">
+    <img src="https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.3/abstract/avatar2.png">
+    <p>Mr. Tunas</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>发布于：2020年3月6日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/code/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>code</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p>待写作: go</p>
+
+      
+    </div>
+    <!-- 
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/CSP/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> CSP</a>
+        
+          <a href="/tags/Golang/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Golang</a>
         
       </div>
      -->
@@ -523,7 +619,12 @@
           <li><a class="flat-box"
             title="/categories/code/" href="/categories/code/"
             id="categoriescode"
-            ><div class='name'>code</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>code</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/php/" href="/categories/php/"
+            id="categoriesphp"
+            ><div class='name'>php</div><div class='badge'>(1)</div></a></li>
         
       </ul>
     </div>
@@ -547,7 +648,7 @@
 
 
     <div class='content'>
-      <a href="/tags/Actor/" style="font-size: 14px; color: #999">Actor</a>
+      <a href="/tags/Actor/" style="font-size: 14px; color: #999">Actor</a> <a href="/tags/CSP/" style="font-size: 14px; color: #999">CSP</a> <a href="/tags/Erlang/" style="font-size: 14px; color: #999">Erlang</a> <a href="/tags/Golang/" style="font-size: 14px; color: #999">Golang</a> <a href="/tags/cgi/" style="font-size: 14px; color: #999">cgi</a> <a href="/tags/fast-cgi/" style="font-size: 14px; color: #999">fast-cgi</a> <a href="/tags/php/" style="font-size: 14px; color: #999">php</a> <a href="/tags/php-fpm/" style="font-size: 14px; color: #999">php-fpm</a>
     </div>
   </section>
 
