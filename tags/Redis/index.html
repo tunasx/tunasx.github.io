@@ -367,7 +367,7 @@
             
 <div class='new-meta-item author'>
   <a href="" rel="nofollow">
-    <img src="https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.3/abstract/avatar2.png">
+    <img src="https://cdn.jsdelivr.net/gh/tunasx/jdn@v1.0.3/abstract/avatar2.png">
     <p>Mr. Tunas</p>
   </a>
 </div>
@@ -464,8 +464,8 @@
 <li>提升灵活性</li>
 <li>节约内存</li>
 </ol>
-<h3 id="压缩列表"><a href="#压缩列表" class="headerlink" title="压缩列表"></a>压缩列表</h3><p>列表键和哈希键的底层实现之一<br>为节约内存设计， 由一系列特殊编码的连续内存块组成的顺序型(sequential)数据结构<br>组成如下图所示:<br><img src="https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.4/abstract/redis/redis_ziplist_struct.png" alt="redis_ziplist_struct"></p>
-<p><strong>压缩链表的结点构成</strong><br><img src="https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.4/abstract/redis/ziplist_entry_struct.png" alt="ziplist_entry_struct"><br>每个亚索列表节点可以保存一个字节或者一个整数值，其中，字节数组可以是一下几种: </p>
+<h3 id="压缩列表"><a href="#压缩列表" class="headerlink" title="压缩列表"></a>压缩列表</h3><p>列表键和哈希键的底层实现之一<br>为节约内存设计， 由一系列特殊编码的连续内存块组成的顺序型(sequential)数据结构<br>组成如下图所示:<br><img src="https://cdn.jsdelivr.net/gh/tunasx/jdn@v1.0.4/abstract/redis/redis_ziplist_struct.png" alt="redis_ziplist_struct"></p>
+<p><strong>压缩链表的结点构成</strong><br><img src="https://cdn.jsdelivr.net/gh/tunasx/jdn@v1.0.4/abstract/redis/ziplist_entry_struct.png" alt="ziplist_entry_struct"><br>每个亚索列表节点可以保存一个字节或者一个整数值，其中，字节数组可以是一下几种: </p>
 <table>
 <thead>
 <tr>
@@ -527,7 +527,7 @@
 <p><strong>encoding</strong><br>记录content属性所保存数据的类型以及长度  </p>
 <ul>
 <li>一字节、两字节或者五字节长， 值的最高位为00、01或者10表示content属性是字节数组  数组长度由编码去除最高两位之后的表示</li>
-<li>一字节长，值的开头是11，表示content属性是整数 整数类型和长度由编码去除最高两位之后的表示<br>如下表所示:<br><img src="https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.4/abstract/redis/ziplist_encoding_struct.png" alt="ziplist_encoding_struct"></li>
+<li>一字节长，值的开头是11，表示content属性是整数 整数类型和长度由编码去除最高两位之后的表示<br>如下表所示:<br><img src="https://cdn.jsdelivr.net/gh/tunasx/jdn@v1.0.4/abstract/redis/ziplist_encoding_struct.png" alt="ziplist_encoding_struct"></li>
 </ul>
 <p><strong>content</strong><br>保存节点的值，可以是字节数组或者整数  </p>
 <p><strong>连锁更新</strong><br>添加节点或者删除节点时可能引发连锁更新，但发生的几率很小   </p>
@@ -538,7 +538,7 @@
 <li>有序集合对象</li>
 <li>哈希对象  </li>
 </ul>
-<p>对象的编码有如下几种:<br><img src="https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.4/abstract/redis/redisObject_encoding.png" alt="redisObject_encoding"><br>每种类型对象至少使用了表中两种不同的编码  如图所示<br><img src="https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.4/abstract/redis/redisObject_encoding_map.png" alt="redisObject_encoding_map"></p>
+<p>对象的编码有如下几种:<br><img src="https://cdn.jsdelivr.net/gh/tunasx/jdn@v1.0.4/abstract/redis/redisObject_encoding.png" alt="redisObject_encoding"><br>每种类型对象至少使用了表中两种不同的编码  如图所示<br><img src="https://cdn.jsdelivr.net/gh/tunasx/jdn@v1.0.4/abstract/redis/redisObject_encoding_map.png" alt="redisObject_encoding_map"></p>
 <h2 id="RDB"><a href="#RDB" class="headerlink" title="RDB"></a>RDB</h2><p>SAVE 和 BGSAVE</p>
 <p>SAVE会阻塞进程<br>BGSAVE 不会阻塞主进程，通过fork子进程来进行rdb文件的生成</p>
 <p>服务器启动的时候加载RDB文件</p>
@@ -620,7 +620,7 @@
   <div class='content'>
     
       <div class='avatar'>
-        <img class='avatar' src='https://cdn.jsdelivr.net/gh/tunasx/cdn@v1.0.3/abstract/avatar3.png'/>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/tunasx/jdn@v1.0.3/abstract/avatar3.png'/>
       </div>
     
     
