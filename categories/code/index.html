@@ -281,7 +281,7 @@
       
         
           <div class="post-wrapper">
-            <article class="post white-box   reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -292,7 +292,7 @@
       
         
   <h2 class="title">
-    <a href="/2020/03/06/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/Actor%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
+    <a href="/2020/03/16/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/Actor%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
       Actor编程模型
     </a>
   </h2>
@@ -318,7 +318,7 @@
             <div class="new-meta-item date">
   <a class="notlink">
     <i class="fas fa-edit" aria-hidden="true"></i>
-    <p>发布于：2020年3月6日</p>
+    <p>发布于：2020年3月16日</p>
   </a>
 </div>
 
@@ -353,18 +353,15 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       <p>Actors模型(Actor model)首先是由Carl Hewitt在1973定义， 由Erlang OTP (Open Telecom Platform) 推广，其消息传递更加符合面向对象的原始意图。 Actors属于并发组件模型 ，通过组件方式定义并发编程范式的高级阶段，避免使用者直接接触多线程并发或线程池等基础概念。  </p>
-<p>传统多数流行的语言并发是基于多线程之间的共享内存，使用同步方法防止写争夺，Actors使用消息模型，每个Actors在同一时间处理最多一个消息，可以发送消息给其他Actors，保证了单独写原则 。从而巧妙避免了多线程写争夺。  </p>
-<p>Actors模型的特点是：  </p>
-<ul>
-<li>隔离计算实体</li>
-<li>“Share nothing”</li>
-<li>没有任何地方同步</li>
-<li>异步消息传递</li>
-<li>不可变的消息 消息模型类似mailbox / queue</li>
-</ul>
-<p>AKKA框架是一个实现Actors模型的Scala或Java平台，灵感来自ERlang，能更轻松地开发可扩展，实现多线程安全应用。</p>
-<p>Actors是一个轻量级的对象，通过发送消息实现交互。每个Actors在同一时间处理最多一个消息，可以发送消息给其他Actors。在同一时间可以于一个Java虚拟机存在数以百万计的参与者，构架是一个分层的父层（管理） - 子层，其中父层监控子层的行为。还可以很容易地扩展Actor运行在集群中各个节点之间 - 无需修改一行代码。每个演员都可以有内部状态（字段/变量） ，但通信只能通过消息传递，不会有共享数据结构（计数器，队列） 。Akka框架支持两种语言Java和Scala</p>
-<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/16/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/Actor%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -384,7 +381,7 @@
       
         
           <div class="post-wrapper">
-            <article class="post white-box   reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -395,7 +392,7 @@
       
         
   <h2 class="title">
-    <a href="/2020/03/06/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/CSP%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
+    <a href="/2020/03/16/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/CSP%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
       CSP编程模型
     </a>
   </h2>
@@ -421,7 +418,7 @@
             <div class="new-meta-item date">
   <a class="notlink">
     <i class="fas fa-edit" aria-hidden="true"></i>
-    <p>发布于：2020年3月6日</p>
+    <p>发布于：2020年3月16日</p>
   </a>
 </div>
 
@@ -456,7 +453,15 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       <p>待写作: go</p>
-<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/16/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/CSP%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -495,7 +500,7 @@
     
     
 
-<section class="widget blogger  widget-blur desktop">
+<section class="widget blogger  card-shadow widget-blur desktop">
   <div class="content">
     
       <div class="avatar">
@@ -542,7 +547,7 @@
     
   
 
-  <section class="widget category  widget-blur desktop">
+  <section class="widget category  card-shadow widget-blur desktop">
     
   <header>
     
@@ -574,7 +579,7 @@
     
   
 
-  <section class="widget tagcloud  widget-blur desktop">
+  <section class="widget tagcloud  card-shadow widget-blur desktop">
     
   <header>
     
@@ -666,6 +671,16 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
 
   
 <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js" async></script>
@@ -695,14 +710,14 @@
       $(function(){
         if ('.cover') {
           $('.cover').backstretch(
-          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"],
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg"],
           {
             duration: "20000",
             fade: "2500"
           });
         } else {
           $.backstretch(
-          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"],
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg"],
           {
             duration: "20000",
             fade: "2500"

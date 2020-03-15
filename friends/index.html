@@ -264,7 +264,7 @@
   
 
   
-    <article id="page" class="post white-box   article-type-page" itemscope itemprop="blogPost">
+    <article id="page" class="post white-box card-shadow  article-type-page" itemscope itemprop="blogPost">
       
 
 
@@ -359,10 +359,10 @@
     <div class="new-meta-box">
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-05T18:41:39+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-16T02:07:23+08:00">
   <a class="notlink">
     <i class="fas fa-save" aria-hidden="true"></i>
-    <p>更新于：2020年3月5日</p>
+    <p>更新于：2020年3月16日</p>
   </a>
 </div>
 
@@ -458,7 +458,7 @@
     
   
 
-  <section class="widget category  widget-blur desktop">
+  <section class="widget category  card-shadow widget-blur desktop">
     
   <header>
     
@@ -490,7 +490,7 @@
     
   
 
-  <section class="widget tagcloud  widget-blur desktop">
+  <section class="widget tagcloud  card-shadow widget-blur desktop">
     
   <header>
     
@@ -582,6 +582,16 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
 
   
 <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js" async></script>
@@ -611,14 +621,14 @@
       $(function(){
         if ('.cover') {
           $('.cover').backstretch(
-          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"],
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg"],
           {
             duration: "20000",
             fade: "2500"
           });
         } else {
           $.backstretch(
-          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"],
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg"],
           {
             duration: "20000",
             fade: "2500"
