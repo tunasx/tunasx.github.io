@@ -298,6 +298,111 @@
       
         
   <h2 class="title">
+    <a href="/2020/04/01/Golang/%E8%B0%88%E4%B8%80%E8%B0%88Golang%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0Web%E5%BA%94%E7%94%A8%E7%9A%84%E5%B9%B3%E6%BB%91%E9%87%8D%E5%90%AF/">
+      Golang实现Web服务平滑重启
+    </a>
+  </h2>
+
+
+      
+      <div class="new-meta-box">
+        
+          
+        
+          
+            
+<div class="new-meta-item author">
+  <a href rel="nofollow">
+    <img src="/20200310.svg" data-original="https://cdn.jsdelivr.net/gh/tunasx/jdn/abstract/avatar2.png">
+    <p>Mr. Tunas</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class="notlink">
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>发布于：2020年4月1日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class="new-meta-item category">
+    <a href="/categories/golang/" rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>golang</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>可以说，没有什么 <code>WEB</code> 应用是可以永久运行一直提供服务的，中间一定会面临着服务的关闭、重启以及升级等情况，如应用切换机器部署时，需要关闭旧机器的应用。应用配置更新时，需要重启进行加载使其生效。发布新的应用功能时，需要对应用进行升级发布。<br>同时 <code>WEB</code> 服务又在对外不断地提供服务，如果不加以技术手段来控制服务的关闭、重启以及升级过程，就可能造成如下几种情况：</p>
+<ol>
+<li>正在处理的用户请求被断开无法响应  </li>
+<li>重启和升级过程中，服务暂时不可用，新的请求无法处理  </li>
+</ol>
+<p>上面的情况对于一个企业服务来说是不可忍受的，因此必须使用必要的手段来控制，让服务能够做到优雅的关闭和平滑重启，当然，平滑重启是必须建立在优雅关闭的基础上的，下面将针对 <code>Golang</code> 实现的 <code>Web</code> 应用来谈一谈服务的优雅关闭和平滑重启实现</p>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/04/01/Golang/%E8%B0%88%E4%B8%80%E8%B0%88Golang%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0Web%E5%BA%94%E7%94%A8%E7%9A%84%E5%B9%B3%E6%BB%91%E9%87%8D%E5%90%AF/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
+      
+    </div>
+    <!-- 
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/golang/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> golang</a>
+        
+          <a href="/tags/endless/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> endless</a>
+        
+      </div>
+     -->
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class="post-wrapper">
+            <article class="post white-box card-shadow  reveal ">
+  
+
+
+  <section class="meta">
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
     <a href="/2020/03/16/%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/Actor%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
       Actor编程模型
     </a>
@@ -376,111 +481,6 @@
           <a href="/tags/Actor/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Actor</a>
         
           <a href="/tags/Erlang/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Erlang</a>
-        
-      </div>
-     -->
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <article class="post white-box card-shadow  reveal ">
-  
-
-
-  <section class="meta">
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2020/03/16/Golang/%E8%B0%88%E4%B8%80%E8%B0%88Golang%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0Web%E5%BA%94%E7%94%A8%E7%9A%84%E5%B9%B3%E6%BB%91%E9%87%8D%E5%90%AF/">
-      谈一谈Golang怎么实现Web应用的平滑重启
-    </a>
-  </h2>
-
-
-      
-      <div class="new-meta-box">
-        
-          
-        
-          
-            
-<div class="new-meta-item author">
-  <a href rel="nofollow">
-    <img src="/20200310.svg" data-original="https://cdn.jsdelivr.net/gh/tunasx/jdn/abstract/avatar2.png">
-    <p>Mr. Tunas</p>
-  </a>
-</div>
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class="notlink">
-    <i class="fas fa-edit" aria-hidden="true"></i>
-    <p>发布于：2020年3月16日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class="new-meta-item category">
-    <a href="/categories/golang/" rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>golang</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>可以说，没有什么 <code>WEB</code> 应用是可以永久运行一直提供服务的，中间一定会面临着服务的关闭、重启以及升级等情况，如应用切换机器部署时，需要关闭旧机器的应用。应用配置更新时，需要重启进行加载使其生效。发布新的应用功能时，需要对应用进行升级发布。<br>同时 <code>WEB</code> 服务又在对外不断地提供服务，如果不加以技术手段来控制服务的关闭、重启以及升级过程，就可能造成如下几种情况：</p>
-<ol>
-<li>正在处理的用户请求被断开无法响应  </li>
-<li>重启和升级过程中，服务暂时不可用，新的请求无法处理  </li>
-</ol>
-<p>上面的情况对于一个企业服务来说是不可忍受的，因此必须使用必要的手段来控制，让服务能够做到优雅的关闭和平滑重启，当然，平滑重启是必须建立在优雅关闭的基础上的，下面将针对 <code>Golang</code> 实现的 <code>Web</code> 应用来谈一谈服务的优雅关闭和平滑重启实现</p>
-      
-        
-          <div class="button readmore">
-            <a href="/2020/03/16/Golang/%E8%B0%88%E4%B8%80%E8%B0%88Golang%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0Web%E5%BA%94%E7%94%A8%E7%9A%84%E5%B9%B3%E6%BB%91%E9%87%8D%E5%90%AF/" class="flat-box">
-              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-              阅读全文
-            </a>
-          </div>
-        
-      
-    </div>
-    <!-- 
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/golang/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> golang</a>
-        
-          <a href="/tags/endless/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> endless</a>
         
       </div>
      -->
